@@ -1,0 +1,181 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(india.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    margin-left: 50px;
+    
+}
+nav{
+    width: 100%;
+    background-color: rgb(0, 0,0, 0.3);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+section{
+    text-align: center;
+    margin-top: 100px;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav .menu{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+nav .menu a:nth-child(1){
+    color: chartreuse;
+}
+section h3{
+    font-size: 35px;
+    letter-spacing: 3px;
+  font-weight: 30px;
+  color: #054cf0;
+}
+section h1 {
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 30px 0 20px 0;
+    color: #0dc78f;
+    
+}
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+     
+    color: rgb(191, 9, 157);
+    font-size: 50px;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration:none ;
+    letter-spacing: 1px;
+    }
+    section  .btnone{
+                background-color: #fff;
+                color: #000;
+
+    }   
+    section .btnone:hover{
+        background-color: rgb(26, 212, 19);
+        color: white;
+    }     
+    section  .btntwo{
+       
+        background-color: rgb(16, 217, 33);
+color: white;
+}   
+section .btntwo:hover{
+    background-color: #fff;
+    color: #000;
+}     
+.change_content::after{
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: rgb(94, 166, 229);
+
+}
+@keyframes changetext{
+    0%{content: "DELHI";}
+    20%{content: "MUMBAI";}
+    30%{
+        content: "KOLKATA";
+    }
+    40%{content:"PUNE";}
+    50%{content: "JAIPUR";}
+    70%{
+        content: "CHENNAI";
+
+    }
+    80%{content: "BANGALORE";}
+    90%{content: "GOA";}
+    100%{content: "HYDERABAD";}
+}
+.grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+}
+.grid>div{
+    height: 200px;
+    cursor: pointer;
+     background-position: fixed;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     border: 10px solid rgb(0, 0, 0);
+     border-radius: 10px;
+     width: 50%;
+     margin-left: 200px;
+     background-color: #000;
+     
+}
+.plc1{
+    background-image: url(delhi.jpg);
+    font-size: 30px;
+    color: white;
+    
+    
+}
+.plc2{
+    background-image: url(mumbai.jpg);
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.plc3{
+    background-image: url(kolkata.jpg);
+    font-size: 30px;
+    color: white;
+}
+.plc4{
+    background-image: url(cheenai.jpg);
+    font-size: 30px;
+    color: white;
+}
+
+.plc5{
+    background-image: url(jaipur.jpg);
+    font-size: 30px;
+    color: white;
+}
+.plc6{
+    background-image: url(bangalore.jpg);
+    font-size: 30px;
+    color: white;
+}
+.plc7{
+    background-image: url(goa.jpg);
+    font-size: 30px;
+    color: white;
+}
+.plc8{
+    background-image: url(pune.jpg);
+    font-size: 30px;
+    color: white;
+}
